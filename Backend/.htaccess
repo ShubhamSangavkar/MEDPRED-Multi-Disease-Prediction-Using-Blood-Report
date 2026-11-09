@@ -1,0 +1,7 @@
+# Keep local credentials and user-uploaded files private.
+<Files "config.local.php">
+    Require all denied
+</Files>
+<FilesMatch "\.(pdf|sql|log)$">
+    Require all denied
+</FilesMatch>
